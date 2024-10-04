@@ -4,15 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="" />
+    <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/CalcAño.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/CalcAño.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Entrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Entrada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Java1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Java1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A16.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A21.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A23.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A24.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A25.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A31.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A31.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A41.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A41.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A42.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A42.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Uf1A22.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Uf1A22.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2mCTj89F3WrOIZt13fdEHUEl9hb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,7 +40,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.UF1A96.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -33,6 +55,19 @@
       <option name="presentableId" value="Default" />
       <updated>1726579690751</updated>
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <option name="closed" value="true" />
+      <created>1728064148991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728064148991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
