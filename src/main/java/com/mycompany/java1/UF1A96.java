@@ -18,7 +18,7 @@ public class UF1A96 {
             System.out.println("Introduce tu contraseña");
             String pass = scanner.nextLine();
 
-            if (user !=  reguser || pass != regpass){
+            if (!user.equals(reguser) || !pass.equals(regpass)){
                 if (intentos < 2){
                     System.out.println("Usuario bloqueado");
                     intentos = intentos -1;
@@ -28,8 +28,9 @@ public class UF1A96 {
                     intentos = intentos -1;
                 }
                 }
-            else if (user == reguser &&  pass == regpass){
+            else{
                 System.out.println("Correcto, has iniciado sesión");
+                intentos = intentos - intentos;
             }
         }
 }
