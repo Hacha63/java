@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/traga1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/traga1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,9 +221,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.traga1" />
+        <item itemvalue="Application.traga" />
         <item itemvalue="Application.sonido" />
         <item itemvalue="Application.traga1 (1)" />
-        <item itemvalue="Application.traga" />
         <item itemvalue="Application.Batalla1" />
       </list>
     </recent_temporary>
@@ -255,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728309097283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="a">
+      <option name="closed" value="true" />
+      <created>1728319808115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728319808115</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

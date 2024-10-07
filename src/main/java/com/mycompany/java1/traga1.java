@@ -27,7 +27,7 @@ public class traga1 extends JFrame {
 
         // Configuración de la ventana
         setTitle("Loco Win");
-        setSize(400, 300);
+        setSize(500, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(5, 1));
 
@@ -58,6 +58,7 @@ public class traga1 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 iniciarAnimacion();
+
             }
         });
         contentPane.add(jugarButton);
@@ -75,6 +76,21 @@ public class traga1 extends JFrame {
             }
         });
         contentPane.add(salirButton);
+
+
+        JButton cacaButton = new JButton(" ");
+        cacaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cacaButton.setText("Trampa");
+                dinero = dinero + 50;
+            }
+        });
+        contentPane.add(cacaButton, SwingConstants.CENTER);
+
+
+
+
 
         // Configuración del Timer para la animación
         timer = new Timer(100, new ActionListener() {
@@ -94,7 +110,7 @@ public class traga1 extends JFrame {
             jugarButton.setEnabled(false);  // Desactivar el botón mientras la animación ocurre
             timer.start();  // Iniciar la animación
         } else {
-            resultadoLabel.setText("Vende un órgano para continuar.");
+            resultadoLabel.setText("Vende un órgano");
         }
     }
 
@@ -126,6 +142,7 @@ public class traga1 extends JFrame {
         }
         dineroLabel.setText("Dinero: " + dinero);
         jugarButton.setEnabled(true);  // Reactivar el botón después de la animación
+
     }
 
     // Método para cambiar el color de la ventana temporalmente
