@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Torneo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A101.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A910.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A920.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A930.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A940.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/p.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/traga1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/traga1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/traga1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2mCTj89F3WrOIZt13fdEHUEl9hb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,10 +57,21 @@
   "keyToString": {
     "Application.Batalla.executor": "Run",
     "Application.Batalla1.executor": "Run",
+    "Application.BlackJack.executor": "Run",
+    "Application.PreguntasMat.executor": "Run",
+    "Application.Torneo.executor": "Run",
+    "Application.UF1A101.executor": "Run",
+    "Application.UF1A91.executor": "Run",
+    "Application.UF1A910.executor": "Run",
+    "Application.UF1A920.executor": "Run",
+    "Application.UF1A930.executor": "Run",
+    "Application.UF1A940.executor": "Run",
     "Application.UF1A96.executor": "Run",
+    "Application.p.executor": "Run",
     "Application.sonido.executor": "Run",
     "Application.traga.executor": "Run",
     "Application.traga1 (1).executor": "Run",
+    "Application.traga1 (2).executor": "Run",
     "Application.traga1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -74,9 +89,9 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.traga1">
-    <configuration name="Batalla1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.Batalla1" />
+  <component name="RunManager" selected="Application.UF1A101">
+    <configuration name="PreguntasMat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.PreguntasMat" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sonido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.sonido" />
+    <configuration name="UF1A101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A101" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +116,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="traga" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.traga" />
+    <configuration name="UF1A920" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A920" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="traga1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.traga1" />
+    <configuration name="UF1A930" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A930" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +142,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="traga1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.traga1" />
+    <configuration name="UF1A940" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A940" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -220,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.traga1" />
-        <item itemvalue="Application.traga" />
-        <item itemvalue="Application.sonido" />
-        <item itemvalue="Application.traga1 (1)" />
-        <item itemvalue="Application.Batalla1" />
+        <item itemvalue="Application.UF1A101" />
+        <item itemvalue="Application.PreguntasMat" />
+        <item itemvalue="Application.UF1A940" />
+        <item itemvalue="Application.UF1A930" />
+        <item itemvalue="Application.UF1A920" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728319808115</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="a">
+      <option name="closed" value="true" />
+      <created>1728324846577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728324846577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
