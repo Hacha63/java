@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Torneo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A101.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A910.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A920.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A930.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A940.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/p.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/JocCartes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +52,7 @@
     "Application.Batalla.executor": "Run",
     "Application.Batalla1.executor": "Run",
     "Application.BlackJack.executor": "Run",
+    "Application.JocCartes.executor": "Run",
     "Application.PreguntasMat.executor": "Run",
     "Application.Torneo.executor": "Run",
     "Application.UF1A101.executor": "Run",
@@ -89,7 +84,20 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF1A101">
+  <component name="RunManager" selected="Application.JocCartes">
+    <configuration name="JocCartes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.JocCartes" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PreguntasMat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.PreguntasMat" />
       <module name="java1" />
@@ -105,19 +113,6 @@
     </configuration>
     <configuration name="UF1A101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A101" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF1A920" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A920" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -235,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UF1A101" />
+        <item itemvalue="Application.JocCartes" />
         <item itemvalue="Application.PreguntasMat" />
+        <item itemvalue="Application.UF1A101" />
         <item itemvalue="Application.UF1A940" />
         <item itemvalue="Application.UF1A930" />
-        <item itemvalue="Application.UF1A920" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728324846577</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="a">
+      <option name="closed" value="true" />
+      <created>1728485120084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728485120084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
