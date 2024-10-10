@@ -10,5 +10,6 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>com.mycompany.java1.Java1</exec.mainClass>
+        <exec.inheritIo>true</exec.inheritIo>
     </properties>
 </project>
