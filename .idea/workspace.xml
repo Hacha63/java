@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/JocCartes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Torneo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Torneo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes$Carta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes$Jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Torneo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/Torneo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,44 +50,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Batalla.executor": "Run",
-    "Application.Batalla1.executor": "Run",
-    "Application.BlackJack.executor": "Run",
-    "Application.JocCartes.executor": "Run",
-    "Application.PreguntasMat.executor": "Run",
-    "Application.Torneo.executor": "Run",
-    "Application.UF1A101.executor": "Run",
-    "Application.UF1A91.executor": "Run",
-    "Application.UF1A910.executor": "Run",
-    "Application.UF1A920.executor": "Run",
-    "Application.UF1A930.executor": "Run",
-    "Application.UF1A940.executor": "Run",
-    "Application.UF1A96.executor": "Run",
-    "Application.p.executor": "Run",
-    "Application.sonido.executor": "Run",
-    "Application.traga.executor": "Run",
-    "Application.traga1 (1).executor": "Run",
-    "Application.traga1 (2).executor": "Run",
-    "Application.traga1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/alumnet/Baixades/jl1.0.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Batalla.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Batalla1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BlackJack.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JocCartes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PreguntasMat.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Torneo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A101.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A91.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A910.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A920.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A930.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A940.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF1A96.executor&quot;: &quot;Run&quot;,
+    &quot;Application.p.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sonido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.traga.executor&quot;: &quot;Run&quot;,
+    &quot;Application.traga1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.traga1 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.traga1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alumnet/Baixades/jl1.0.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JocCartes">
+  <component name="RunManager" selected="Application.Torneo">
     <configuration name="JocCartes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.JocCartes" />
       <module name="java1" />
@@ -111,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UF1A101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A101" />
+    <configuration name="Torneo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.Torneo" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UF1A930" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A930" />
+    <configuration name="UF1A101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A101" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -230,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Torneo" />
         <item itemvalue="Application.JocCartes" />
         <item itemvalue="Application.PreguntasMat" />
         <item itemvalue="Application.UF1A101" />
         <item itemvalue="Application.UF1A940" />
-        <item itemvalue="Application.UF1A930" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728485120084</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="a">
+      <option name="closed" value="true" />
+      <created>1728486525891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728486525891</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
