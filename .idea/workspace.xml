@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/JocCartes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/JocCartes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/JocCartes.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Torneo">
+  <component name="RunManager" selected="Application.JocCartes">
     <configuration name="JocCartes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.JocCartes" />
       <module name="java1" />
@@ -229,8 +230,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Torneo" />
         <item itemvalue="Application.JocCartes" />
+        <item itemvalue="Application.Torneo" />
         <item itemvalue="Application.PreguntasMat" />
         <item itemvalue="Application.UF1A101" />
         <item itemvalue="Application.UF1A940" />
@@ -310,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728570356199</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="a">
+      <option name="closed" value="true" />
+      <created>1728583869291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728583869291</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
