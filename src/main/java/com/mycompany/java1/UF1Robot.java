@@ -34,7 +34,7 @@ public class UF1Robot {
             } else if (moviment == 2) {  // Esquerra
                 desplaçament = random.nextInt(3) + 1;  // Aleatori entre 1 i 3
                 if (posicioActual - desplaçament < 0) {
-                    desplaçament = posicioActual;  // Evitar sortir de la línia
+                    desplaçament = posicioActual;   // Evitar sortir de la línia
                 }
                 System.out.println("Moviment a l'esquerra de " + desplaçament + " posicions.");
             } else {  // Endavant
