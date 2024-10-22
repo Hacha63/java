@@ -32,7 +32,7 @@ public class UF1A13SetiMig {
                             pcvalor = pcvalor + cartapc1;
                         }
                     }
-                    System.out.println("El ordinador té un: " + cartapc1);
+                    System.out.println("El ordinador té un: " + cartapc1+" y otra carta oculta");
                     double cartaus = 0;
                     double usvalor = 0;
                     String otra;
@@ -51,10 +51,8 @@ public class UF1A13SetiMig {
                             System.out.println("El jugador se planta!");
                             plantar = false;
                         }
-
-
                     }
-                    if ((usvalor <= 7.5 && usvalor > pcvalor) || pcvalor > 7.5) {
+                    if ((usvalor <= 7.5 && usvalor > pcvalor) || (pcvalor > 7.5 && usvalor <= 7.5)) {
                         apuesta = apuesta * 2;
                         dinero = dinero + apuesta;
                         System.out.println("HAS GANADO\nEl PC tenia: " + pcvalor + "\n");
