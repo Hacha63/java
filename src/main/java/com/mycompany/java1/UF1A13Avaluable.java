@@ -21,19 +21,19 @@ public class UF1A13Avaluable {
             pos1 = pos1 + av1;
             pos2 = pos2 + av2;
             System.out.println("coche1 avanza: "+av1+"\ncoche2 avanza: "+av2);
-            if (pos1 == 2 || pos1 == 4 || pos1 == 6 || pos1 == 8 || pos1 == 10){
+            if (pos1%2==0){
                 System.out.println("coche1. Curva Cerrada. Retrocede: "+pos1/2);
                 pos1 = pos1 - (pos1/2);
             }
-            else if (pos1 == 1 || pos1 == 3 || pos1 == 5 || pos1 == 7 || pos1 == 9){
+            else{
                 System.out.println("coche1. Acelera en recta: "+(pos1+1)/2);
                 pos1 = pos1 + ((pos1+1)/2);
             }
-            if (pos2 == 2 || pos2 == 4 || pos2 == 6 || pos2 == 8 || pos2 == 10){
+            if (pos2%2==0){
                 System.out.println("coche2. Curva Cerrada. Retrocede: "+pos2/2);
                 pos2 = pos2 - (pos2/2);
             }
-            else if (pos2 == 1 || pos2 == 3 || pos2 == 5 || pos2 == 7 || pos2 == 9){
+            else{
                 System.out.println("coche2. Acelera en recta: "+(pos2+1)/2);
                 pos2 = pos2 + ((pos2+1)/2);
             }
