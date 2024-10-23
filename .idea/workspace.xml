@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13Avaluable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13SetiMig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13SetiMig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A13SetiMig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A13SetiMig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
     "Application.UF1A117.executor": "Run",
     "Application.UF1A121.executor": "Run",
     "Application.UF1A122.executor": "Run",
+    "Application.UF1A13Avaluable.executor": "Run",
     "Application.UF1A13SetiMig.executor": "Run",
     "Application.UF1A91.executor": "Run",
     "Application.UF1A910.executor": "Run",
@@ -96,6 +98,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.UF1A13SetiMig">
+    <configuration name="PreguntasMat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.PreguntasMat" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UF1123" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1123" />
       <module name="java1" />
@@ -109,34 +124,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UF1A117" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A117" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF1A121" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A121" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UF1A122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A122" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF1A13Avaluable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A13Avaluable" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -242,10 +244,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UF1A13SetiMig" />
-        <item itemvalue="Application.UF1123" />
+        <item itemvalue="Application.UF1A13Avaluable" />
+        <item itemvalue="Application.PreguntasMat" />
         <item itemvalue="Application.UF1A122" />
-        <item itemvalue="Application.UF1A121" />
-        <item itemvalue="Application.UF1A117" />
+        <item itemvalue="Application.UF1123" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729611245315</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="a">
+      <option name="closed" value="true" />
+      <created>1729620742274</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729620742274</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
