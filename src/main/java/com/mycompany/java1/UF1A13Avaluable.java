@@ -22,7 +22,7 @@ public class UF1A13Avaluable {
             pos2 = pos2 + av2;
             System.out.println("coche1 avanza: "+av1+"\ncoche2 avanza: "+av2);
             if (pos1%2==0){
-                System.out.println("coche1. Curva Cerrada. Retrocede: "+pos1/2);
+               System.out.println("coche1. Curva Cerrada. Retrocede: "+pos1/2);
                 pos1 = pos1 - (pos1/2);
             }
             else{
