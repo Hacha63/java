@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A192.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A193.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13Avaluable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13Avaluable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A192.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A192.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,93 +47,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Batalla.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Batalla1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BlackJack.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JocCartes.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PreguntasMat.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Torneo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1123.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A101.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A102.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A111.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A112.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A114.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A115.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A116.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A117.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A121.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A122.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A13Avaluable.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A13SetiMig.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A15Triangulo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A171.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A172.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A173.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A174.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A175.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A176.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A181.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A182.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A191.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A91.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A910.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A920.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A930.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A940.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1A96.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF1Robot.executor&quot;: &quot;Run&quot;,
-    &quot;Application.p.executor&quot;: &quot;Run&quot;,
-    &quot;Application.sonido.executor&quot;: &quot;Run&quot;,
-    &quot;Application.traga.executor&quot;: &quot;Run&quot;,
-    &quot;Application.traga1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.traga1 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.traga1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alumnet/Baixades/jl1.0.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Batalla.executor": "Run",
+    "Application.Batalla1.executor": "Run",
+    "Application.BlackJack.executor": "Run",
+    "Application.JocCartes.executor": "Run",
+    "Application.PreguntasMat.executor": "Run",
+    "Application.Torneo.executor": "Run",
+    "Application.UF1123.executor": "Run",
+    "Application.UF1A101.executor": "Run",
+    "Application.UF1A102.executor": "Run",
+    "Application.UF1A111.executor": "Run",
+    "Application.UF1A112.executor": "Run",
+    "Application.UF1A114.executor": "Run",
+    "Application.UF1A115.executor": "Run",
+    "Application.UF1A116.executor": "Run",
+    "Application.UF1A117.executor": "Run",
+    "Application.UF1A121.executor": "Run",
+    "Application.UF1A122.executor": "Run",
+    "Application.UF1A13Avaluable.executor": "Run",
+    "Application.UF1A13SetiMig.executor": "Run",
+    "Application.UF1A15Triangulo.executor": "Run",
+    "Application.UF1A171.executor": "Run",
+    "Application.UF1A172.executor": "Run",
+    "Application.UF1A173.executor": "Run",
+    "Application.UF1A174.executor": "Run",
+    "Application.UF1A175.executor": "Run",
+    "Application.UF1A176.executor": "Run",
+    "Application.UF1A181.executor": "Run",
+    "Application.UF1A182.executor": "Run",
+    "Application.UF1A191.executor": "Run",
+    "Application.UF1A192.executor": "Run",
+    "Application.UF1A193.executor": "Run",
+    "Application.UF1A91.executor": "Run",
+    "Application.UF1A910.executor": "Run",
+    "Application.UF1A920.executor": "Run",
+    "Application.UF1A930.executor": "Run",
+    "Application.UF1A940.executor": "Run",
+    "Application.UF1A96.executor": "Run",
+    "Application.UF1Robot.executor": "Run",
+    "Application.p.executor": "Run",
+    "Application.sonido.executor": "Run",
+    "Application.traga.executor": "Run",
+    "Application.traga1 (1).executor": "Run",
+    "Application.traga1 (2).executor": "Run",
+    "Application.traga1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/alumnet/Baixades/jl1.0.1.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF1A191">
-    <configuration name="UF1A175" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A175" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF1A176" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A176" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.UF1A193">
     <configuration name="UF1A181" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A181" />
       <module name="java1" />
@@ -162,6 +138,32 @@
     </configuration>
     <configuration name="UF1A191" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A191" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF1A192" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A192" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF1A193" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A193" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -253,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UF1A193" />
+        <item itemvalue="Application.UF1A192" />
         <item itemvalue="Application.UF1A191" />
         <item itemvalue="Application.UF1A182" />
         <item itemvalue="Application.UF1A181" />
-        <item itemvalue="Application.UF1A176" />
-        <item itemvalue="Application.UF1A175" />
       </list>
     </recent_temporary>
   </component>
@@ -430,7 +432,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730833317962</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="a">
+      <option name="closed" value="true" />
+      <created>1730919231771</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1730919231771</updated>
+    </task>
+    <task id="LOCAL-00022" summary="a">
+      <option name="closed" value="true" />
+      <created>1730919464133</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730919464133</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
