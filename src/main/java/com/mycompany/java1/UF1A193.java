@@ -21,7 +21,7 @@
                         persona[j] = persona[j + 1];
                     }
                     persona[persona.length - 1] = null;
-                    System.out.println("Posicion "+i+"\n"+persona[i]+" eliminado.");
+                    System.out.println("Posicion "+i+"\n"+borrar+" eliminado.");
                     encontrado = true;
                     i = 21;
                 }
