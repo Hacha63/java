@@ -39,17 +39,21 @@ public class UF1A20 {
                             System.out.println("Tortuga "+(i+1)+" en TRAMPA DE FANGO: -3 posiciones");
                         }
                         else{
-                            tortugas[i] = 0;
                             System.out.println("Tortuga "+(i+1)+" en TRAMPA DE FANGO: VUELTA AL PUNTO DE PARTIDA");
-
+                            tortugas[i] = 0;
+                            num = 0;
                         }
+                        break;
                 }
-                System.out.println("Tortuga "+(i+1)+" avanza "+num+" posiciones");
+
                 tortugas[i] = tortugas[i] + num;
                 if (tortugas[i]>=10){
-                    System.out.println("\n\nGANA LA TROTUGA "+(i+1));
+                    System.out.println("\n\nGANA LA TROTUGA "+(i+1)+" vanzando "+num+" posiciones, llegando a "+tortugas[i]);
                     i = 4;
                     victoria = true;
+                }
+                else{
+                    System.out.println("Tortuga "+(i+1)+" avanza "+num+" posiciones");
                 }
 
             }
