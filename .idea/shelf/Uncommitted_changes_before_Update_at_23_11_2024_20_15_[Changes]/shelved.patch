@@ -1,0 +1,1915 @@
+Index: src/main/java/com/mycompany/java1/UF1A940.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A940.java b/src/main/java/com/mycompany/java1/UF1A940.java
+new file mode 100644
+--- /dev/null	(date 1730361459143)
++++ b/src/main/java/com/mycompany/java1/UF1A940.java	(date 1730361459143)
+@@ -0,0 +1,27 @@
++package com.mycompany.java1;
++import  java.util.Scanner;
++
++public class UF1A940 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        char letra;
++        for (int i = 0; i != 8; i++) {
++            System.out.println("Introduce una letra: ");
++            letra = scanner.next().charAt(0);
++            if (Character.isUpperCase(letra)){
++                System.out.println(letra+" és una mayuscula");
++            }
++            else if (Character.isLowerCase(letra)) {
++                System.out.println(letra + " és una minuscula");
++            }
++            else{
++                    System.out.println(letra+" no és una letra");
++
++                }
++            }
++        }
++
++    }
++
++
+Index: src/main/java/com/mycompany/java1/UF1A930.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A930.java b/src/main/java/com/mycompany/java1/UF1A930.java
+new file mode 100644
+--- /dev/null	(date 1730361459061)
++++ b/src/main/java/com/mycompany/java1/UF1A930.java	(date 1730361459061)
+@@ -0,0 +1,29 @@
++package com.mycompany.java1;
++import  java.util.Scanner;
++
++public class UF1A930 {
++    public  static  void  main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++
++
++        System.out.println("Introduce un numero:");
++        int num = scanner.nextInt();
++        int max = num;
++        int min = num;
++
++        for ( int i = 0; i !=4; i++){
++            System.out.println("Introduce un numero:");
++            num = scanner.nextInt();
++
++            if (num > max){
++                max = num;
++            }
++            if (num < min){
++                min = num;
++
++            }
++        }
++        System.out.println("El numero más grande és: "+max+"\nEl numero más pequeño és: "+min);
++
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1123.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1123.java b/src/main/java/com/mycompany/java1/UF1123.java
+new file mode 100644
+--- /dev/null	(date 1730361459315)
++++ b/src/main/java/com/mycompany/java1/UF1123.java	(date 1730361459315)
+@@ -0,0 +1,29 @@
++package com.mycompany.java1;
++import java.util.Random;
++import java.util.Scanner;
++
++public class UF1123 {
++    public static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++        int num1 = 101;
++        int num = random.nextInt(1,100);
++        for (int intentos = 20;intentos>0;intentos--){
++            System.out.println("Intentos restantes: "+intentos);
++            System.out.println("Introduce un numero");
++            num1 = scanner.nextInt();
++            if (num1 >num){
++                System.out.println("El numero es mas pequeño que "+num1);
++            } else if (num1<num) {
++                System.out.println("El numero es mas grande que "+num1);
++            }
++            else{
++                System.out.println("Correcte, el numero era "+num);
++                intentos = intentos - intentos;
++            }
++        }
++        if (num!=num1){
++            System.out.println("Se acabaron los intentos, el numero era "+num);
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1Robot.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1Robot.java b/src/main/java/com/mycompany/java1/UF1Robot.java
+new file mode 100644
+--- /dev/null	(date 1730361459232)
++++ b/src/main/java/com/mycompany/java1/UF1Robot.java	(date 1730361459232)
+@@ -0,0 +1,62 @@
++package com.mycompany.java1;
++
++import java.util.Random;
++
++public class UF1Robot {
++    public static void main(String[] args) {
++        // Constants
++        int totalMoviments = 19;
++        int tamanyLinia = 20;
++
++        // Inicialització de la línia
++        char[] linia = new char[tamanyLinia];
++        for (int i = 1; i < tamanyLinia; i++) {
++            linia[i] = '-';
++        }
++        linia[0] = 'R';  // Posició inicial del robot
++
++        int posicioActual = 0;  // El robot comença a la posició 0
++
++        Random random = new Random();
++
++        // Simulació dels moviments
++        for (int i = 0; i < totalMoviments; i++) {
++            // Selecció aleatòria del moviment: 0 = endavant, 1 = dreta, 2 = esquerra
++            int moviment = random.nextInt(3);
++            int desplaçament = 1;  // Moviment endavant és sempre 1
++
++            if (moviment == 1) {  // Dreta
++                desplaçament = random.nextInt(3) + 1;  // Aleatori entre 1 i 3
++                if (posicioActual + desplaçament >= tamanyLinia) {
++                    desplaçament = tamanyLinia - 1 - posicioActual;  // Evitar sortir de la línia
++                }
++                System.out.println("Moviment a la dreta de " + desplaçament + " posicions.");
++            } else if (moviment == 2) {  // Esquerra
++                desplaçament = random.nextInt(3) + 1;  // Aleatori entre 1 i 3
++                if (posicioActual - desplaçament < 0) {
++                    desplaçament = posicioActual;   // Evitar sortir de la línia
++                }
++                System.out.println("Moviment a l'esquerra de " + desplaçament + " posicions.");
++            } else {  // Endavant
++                System.out.println("Moviment endavant d'1 posició.");
++            }
++
++            // Actualitzar la posició del robot
++            linia[posicioActual] = '-';  // Esborrem la posició actual
++            if (moviment == 0) {
++                posicioActual = Math.min(posicioActual + 1, tamanyLinia - 1);  // Moure endavant 1 posició
++            } else if (moviment == 1) {
++                posicioActual += desplaçament;  // Moure a la dreta
++            } else {
++                posicioActual -= desplaçament;  // Moure a l'esquerra
++            }
++            linia[posicioActual] = 'R';  // Actualitzem la nova posició amb 'R'
++
++            // Mostrar la línia després de cada moviment
++            System.out.println(new String(linia));
++        }
++
++        // Mostrar la posició final
++        System.out.println("Posició final del robot: columna " + posicioActual);
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a8eb1771-a749-4e5a-a1c8-25841acca51a\" name=\"Changes\" comment=\"a\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/mycompany/java1/Batalla.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A96.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A96.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A96.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A96.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"Hacha63\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/Hacha63/java.git\",\r\n    \"accountId\": \"344b72dc-5237-47cc-b8ca-2222aab36510\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2mCTj89F3WrOIZt13fdEHUEl9hb\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Batalla.executor\": \"Run\",\r\n    \"Application.UF1A96.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"kotlin-language-version-configured\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.mycompany.java1\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a8eb1771-a749-4e5a-a1c8-25841acca51a\" name=\"Changes\" comment=\"\" />\r\n      <created>1726579690751</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1726579690751</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"a\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1728064148991</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1728064148991</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"a\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1728064268230</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1728064268230</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"a\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"a\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 50c035ceb58d1707ed8a6863902dfa3c515cc313)
++++ b/.idea/workspace.xml	(date 1731020019128)
+@@ -5,10 +5,37 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Batalla.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Batalla1.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/JocCartes.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/PreguntasMat.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Torneo.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1123.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A101.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A102.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A111.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A112.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A114.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A115.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A116.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A117.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A121.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A122.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13Avaluable.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A13SetiMig.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A15Triangulo.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A171.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A172.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A173.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A174.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A175.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A910.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A920.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A930.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A940.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1Robot.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/p.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/traga1.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A96.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A96.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A96.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/java1/UF1A96.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -18,22 +45,25 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "Hacha63"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Hacha63&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="GithubPullRequestsUISettings"><![CDATA[{
+   "selectedUrlAndAccountId": {
+     "url": "https://github.com/Hacha63/java.git",
+-    "accountId": "344b72dc-5237-47cc-b8ca-2222aab36510"
++    "accountId": "0aaae068-d9f3-4a2d-91b1-3ea83084f386"
+   }
+ }]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 3
+ }</component>
+   <component name="ProjectId" id="2mCTj89F3WrOIZt13fdEHUEl9hb" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -41,6 +71,8 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "Application.Batalla.executor": "Run",
++    "Application.PreguntasMat.executor": "Run",
++    "Application.UF1A940.executor": "Run",
+     "Application.UF1A96.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "git-widget-placeholder": "main",
+@@ -51,6 +83,40 @@
+     <key name="CopyClassDialog.RECENTS_KEY">
+       <recent name="com.mycompany.java1" />
+     </key>
++  </component>
++  <component name="RunManager" selected="Application.PreguntasMat">
++    <configuration name="PreguntasMat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.PreguntasMat" />
++      <module name="java1" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.mycompany.java1.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="UF1A940" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF1A940" />
++      <module name="java1" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.mycompany.java1.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.PreguntasMat" />
++        <item itemvalue="Application.UF1A940" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -79,6 +145,17 @@
+     </task>
+     <option name="localTasksCounter" value="3" />
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="a" />
+Index: src/main/java/com/mycompany/java1/JocCartes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/JocCartes.java b/src/main/java/com/mycompany/java1/JocCartes.java
+new file mode 100644
+--- /dev/null	(date 1730361457058)
++++ b/src/main/java/com/mycompany/java1/JocCartes.java	(date 1730361457058)
+@@ -0,0 +1,24 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++import java.util.Random;
++
++public class JocCartes {
++    public static void main(String[] args) {
++
++        final String ANSI_RED = "\u001B[31m";
++        final String ANSI_BLACK = "\u001B[30m";
++        final String ANSI_GREEN = "\u001B[32m";
++        final String ANSI_YELLOW = "\u001B[33m";
++        final String ANSI_BLUE = "\u001B[34m";
++        final String ANSI_PURPLE = "\u001B[35m";
++        final String ANSI_CYAN = "\u001B[36m";
++        final String ANSI_WHITE = "\u001B[37m";
++
++        int carta1= 2,carta2= 2,carta3= 2,carta4= 2,carta5= 2,carta6= 2,carta7 = 2,carta8= 2,carta9= 2,carta10= 2,carta11= 2,carta12= 2,carta13=2;
++        int cartaB1= 2,cartaB2= 2,cartaB3= 2,cartaB4= 2,cartaB5= 2,cartaB6= 2,cartaB7 = 2,cartaB8= 2,cartaB9= 2,cartaB10= 2,cartaB11= 2,cartaB12= 2,cartaB13=2;
++
++
++        System.out.println(ANSI_CYAN+"Tu carta és "+carta2);
++
++    }
++}
+\ No newline at end of file
+Index: src/main/java/com/mycompany/java1/Batalla1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/Batalla1.java b/src/main/java/com/mycompany/java1/Batalla1.java
+new file mode 100644
+--- /dev/null	(date 1730361456982)
++++ b/src/main/java/com/mycompany/java1/Batalla1.java	(date 1730361456982)
+@@ -0,0 +1,152 @@
++package com.mycompany.java1;
++import java.util.Random;
++import java.util.Scanner;
++
++public class Batalla1 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++        int intentos = 3;
++
++        System.out.println("Primer jugador: ");
++        String us1 = scanner.nextLine();
++        System.out.println("Seundo jugador: ");
++        String us2 = scanner.nextLine();
++
++        int inicio = random.nextInt(2);
++
++        double vida1 = random.nextInt(50, 100);
++        double vida2 = random.nextInt(50, 100);
++
++        double daño1;
++        double daño2;
++
++        int critico;
++        int esquive;
++
++        int turno = 0;
++
++        System.out.println("Presiona (enter) para continuar con el siguiente turno");
++        String pausa;
++        if (inicio == 0) {
++            System.out.println("Empieza " + us1);
++            while (vida1 > 0 || vida2 > 0) {
++
++                daño1 = random.nextInt(5, 25);
++                daño2 = random.nextInt(5, 25);
++
++                critico = random.nextInt(10);
++                esquive = random.nextInt(20);
++
++                turno = turno + 1;
++                pausa = scanner.nextLine();
++                System.out.println("Truno " + turno);
++                System.out.println(us1 + " ataca a " + us2);
++                if (critico == 0){
++                    daño1 = daño1 * 1.5;
++                    System.out.println("CRITICO!");
++                }
++                else if(esquive == 0){
++                    daño1 = daño1 - daño1;
++                    System.out.println("ESQUIVE!");
++                }
++                vida2 = vida2 - daño1;
++                System.out.println(us2 + " recibe " + daño1 + " de daño, la vida de " + us2 + " és " + vida2);
++
++                if (vida1 <= 0){
++                    System.out.println(us2+" GANA");
++                    break;
++                }
++                else if (vida2 <= 0){
++                    System.out.println(us1+" GANA");
++                    break;
++                }
++                pausa = scanner.nextLine();
++                turno = turno + 1;
++                System.out.println("Truno " + turno);
++                System.out.println(us2 + " ataca a " + us1);
++                critico = random.nextInt(10);
++                esquive = random.nextInt(20);
++                if (critico == 0){
++                    daño2 = daño2 * 1.5;
++                    System.out.println("CRITICO!");
++                }
++                else if(esquive == 0){
++                    daño2 = daño2 - daño2;
++                    System.out.println("ESQUIVE!");
++                }
++
++                vida1 = vida1 - daño2;
++                System.out.println(us1 + " recibe " + daño2 + " de daño, la vida de " + us1 + " és " + vida1);
++
++                if (vida1 <= 0){
++                    System.out.println(us2+" GANA");
++                    break;
++                }
++                else if (vida2 <= 0){
++                    System.out.println(us1+" GANA");
++                    break;
++                }
++            }
++        } else {
++            System.out.println("Empieza " + us2);
++            while (vida1 > 0 || vida2 > 0) {
++                daño1 = random.nextInt(5, 25);
++                daño2 = random.nextInt(5, 25);
++                turno = turno + 1;
++                critico = random.nextInt(10);
++                esquive = random.nextInt(20);
++                pausa = scanner.nextLine();
++                System.out.println("Truno " + turno);
++                System.out.println(us2 + " ataca a " + us1);
++
++                if (critico == 0){
++                    daño2 = daño2 * 1.5;
++                    System.out.println("CRITICO!");
++                }
++                else if(esquive == 0){
++                    daño2 = daño2 - daño2;
++                    System.out.println("ESQUIVE!");
++                }
++
++                vida1 = vida1 - daño2;
++                System.out.println(us1 + " recibe " + daño2 + " de daño, la vida de " + us1 + " és " + vida1);
++                if (vida1 <= 0){
++                    System.out.println(us2+" GANA");
++                    break;
++                }
++                else if (vida2 <= 0){
++                    System.out.println(us1+" GANA");
++                    break;
++                }
++                pausa = scanner.nextLine();
++                turno = turno + 1;
++                critico = random.nextInt(10);
++                esquive = random.nextInt(20);
++                System.out.println("Truno " + turno);
++                System.out.println(us1 + " ataca a " + us2);
++                if (critico == 0){
++                    daño1 = daño1 * 1.5;
++                    System.out.println("CRITICO!");
++                }
++                else if(esquive == 0){
++                    daño1 = daño1 - daño1;
++                    System.out.println("ESQUIVE!");
++                }
++                vida2 = vida2 - daño1;
++                System.out.println(us1 + " recibe " + daño1 + " de daño, la vida de " + us2 + " és " + vida2);
++                if (vida1 <= 0){
++                    System.out.println(us2+" GANA");
++                    break;
++                }
++                else if (vida2 <= 0){
++                    System.out.println(us1+" GANA");
++                    break;
++                }
++
++            }
++
++
++        }
++    }
++    }
+Index: src/main/java/com/mycompany/java1/PreguntasMat.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/PreguntasMat.java b/src/main/java/com/mycompany/java1/PreguntasMat.java
+new file mode 100644
+--- /dev/null	(date 1731020303632)
++++ b/src/main/java/com/mycompany/java1/PreguntasMat.java	(date 1731020303632)
+@@ -0,0 +1,90 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++import java.util.Random;
++
++public class PreguntasMat {
++    public static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++        int pregunta = 0;
++
++        System.out.println("Cauntas preguntas quieres? ");
++        int preguntas = scanner.nextInt();
++        double porcentajetotal = preguntas;
++        double porcentaje = 0;
++
++        for (; preguntas != 0;preguntas--){
++            int sim = random.nextInt(4);
++            int num1 = random.nextInt(0,10);
++            int num2 = random.nextInt(0,10);
++
++            double respuesta = 0;
++            double correcto = 0;
++
++            pregunta ++;
++
++            switch (sim){
++                case 0:
++                    System.out.print("Pregunta "+pregunta+ ". "+num1+" + "+num2+ " = ");
++                     respuesta = scanner.nextDouble();
++                     correcto = num1 + num2;
++                    if (respuesta == correcto){
++                        System.out.println("CORRECTO");
++                        porcentaje = porcentaje+1;
++
++                    }
++                    else{
++                        System.out.println("INCORRECTO, era "+correcto);
++                    }
++                    break;
++                case 1:
++                    System.out.print("Pregunta "+pregunta+ ". "+num1+" - "+num2+ " = ");
++                     respuesta = scanner.nextDouble();
++                     correcto = num1 - num2;
++                    if (respuesta == correcto){
++                        System.out.println("CORRECTO");
++                        porcentaje = porcentaje+1;
++                    }
++                    else{
++                        System.out.println("INCORRECTO, era "+correcto);
++                    }
++                    break;
++                case 2:
++                    System.out.print("Pregunta "+pregunta+ ". "+num1+" * "+num2+ " = ");
++                     respuesta = scanner.nextDouble();
++                     correcto = num1 * num2;
++                    if (respuesta == correcto){
++                        System.out.println("CORRECTO");
++                        porcentaje = porcentaje+1;
++                    }
++                    else{
++                        System.out.println("INCORRECTO, era "+correcto);
++                    }
++                    break;
++                case 3:
++                    if (num1 > num2 || num2 == 0) {
++                        System.out.print("Pregunta " + pregunta + ". " + num1 + " / " + (num2+1) + " = ");
++                        respuesta = scanner.nextDouble();
++                        correcto = num1 / num2;
++                    }
++                    else if (num2 > num1 || num1 == 0){
++                        System.out.print("Pregunta "+pregunta+ ". "+num2+" / "+(num1+1)+ " = ");
++                        respuesta = scanner.nextDouble();
++                        correcto = num2 / num1;
++                        }
++                    if (respuesta == correcto){
++                        System.out.println("CORRECTO");
++                        porcentaje = porcentaje + 1;
++                    }
++                    else{
++                        System.out.println("INCORRECTO, era "+correcto);
++                    }
++                    break;
++
++            }
++
++        }
++
++        System.out.println("El porcentaje és de: "+porcentaje/porcentajetotal*100+"%");
++    }
++}
+Index: src/main/java/com/mycompany/java1/p.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/p.java b/src/main/java/com/mycompany/java1/p.java
+new file mode 100644
+--- /dev/null	(date 1730361457134)
++++ b/src/main/java/com/mycompany/java1/p.java	(date 1730361457134)
+@@ -0,0 +1,116 @@
++package com.mycompany.java1;
++
++import java.util.Scanner;
++import java.util.Random;
++
++public class p {
++
++
++    public static String lucha(String us1, String us2, double vida1, double vida2, Random random, Scanner scanner) {
++        int turno = 0;
++        int critico, esquive;
++        double daño1, daño2;
++
++        while (vida1 > 0 && vida2 > 0) {
++            turno++;
++            System.out.println("Turno " + turno);
++
++            // Jugador 1 ataca
++            System.out.println(us1 + " ataca a " + us2);
++            daño1 = random.nextInt(5, 25);
++            critico = random.nextInt(10);
++            esquive = random.nextInt(20);
++
++            if (critico == 0) {
++                daño1 *= 1.5;
++                System.out.println("¡CRÍTICO!");
++            } else if (esquive == 0) {
++                daño1 = 0;
++                System.out.println("¡ESQUIVE!");
++            }
++
++            vida2 -= daño1;
++            System.out.println(us2 + " recibe " + daño1 + " de daño. Vida restante de " + us2 + ": " + vida2);
++
++            if (vida2 <= 0) {
++                System.out.println(us1 + " GANA");
++                return us1; // Retorna el nombre del ganador
++            }
++
++            System.out.println("Presiona Enter para continuar...");
++            scanner.nextLine();
++
++            System.out.println(us2 + " ataca a " + us1);
++            daño2 = random.nextInt(5, 25);
++            critico = random.nextInt(10);
++            esquive = random.nextInt(20);
++
++            if (critico == 0) {
++                daño2 *= 1.5;
++                System.out.println("¡CRÍTICO!");
++            } else if (esquive == 0) {
++                daño2 = 0;
++                System.out.println("¡ESQUIVE!");
++            }
++
++            vida1 -= daño2;
++            System.out.println(us1 + " recibe " + daño2 + " de daño. Vida restante de " + us1 + ": " + vida1);
++
++            if (vida1 <= 0) {
++                System.out.println(us2 + " GANA");
++                return us2;
++            }
++
++            System.out.println("Presiona Enter para continuar...");
++            scanner.nextLine();
++        }
++
++        return null;
++    }
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++
++        System.out.println("Cuantos jugadores jugarán? (Mínimo 2, Máximo 4)");
++        int jugadores = scanner.nextInt();
++        scanner.nextLine();
++
++        if (jugadores < 2 || jugadores > 4) {
++            System.out.println("El número de jugadores debe ser entre 2 y 4.");
++            return;
++        }
++
++        String[] nombres = new String[jugadores];
++
++        for (int i = 0; i < jugadores; i++) {
++            System.out.println("Introduce el nombre del jugador " + (i + 1) + ":");
++            nombres[i] = scanner.nextLine();
++        }
++
++        double vidaInicial = 100.0;
++        double vida1, vida2;
++        String ganador = null;
++
++        if (jugadores == 2) {
++            vida1 = random.nextDouble(50, 100);
++            vida2 = random.nextDouble(50, 100);
++            ganador = lucha(nombres[0], nombres[1], vida1, vida2, random, scanner);
++        } else {
++            vida1 = random.nextDouble(50, 100);
++            vida2 = random.nextDouble(50, 100);
++            ganador = lucha(nombres[0], nombres[1], vida1, vida2, random, scanner);
++
++            vida1 = random.nextDouble(50, 100);
++
++            for (int i = 2; i < jugadores; i++) {
++                System.out.println(ganador + " luchará ahora contra " + nombres[i]);
++                vida2 = random.nextDouble(50, 100);
++                ganador = lucha(ganador, nombres[i], vida1, vida2, random, scanner);
++                vida1 = random.nextDouble(50, 100);
++            }
++        }
++
++        System.out.println("¡El ganador final es " + ganador + "!");
++    }
++}
+Index: src/main/java/com/mycompany/java1/traga1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/traga1.java b/src/main/java/com/mycompany/java1/traga1.java
+new file mode 100644
+--- /dev/null	(date 1730361457375)
++++ b/src/main/java/com/mycompany/java1/traga1.java	(date 1730361457375)
+@@ -0,0 +1,177 @@
++package com.mycompany.java1;
++
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.util.Random;
++
++public class traga1 extends JFrame {
++
++    private int dinero = 50;
++    private JLabel dineroLabel;
++    private JLabel[] slotLabels;
++    private JLabel resultadoLabel;
++    private Random random;
++    private Timer timer;
++    private int[] slots = new int[3];
++    private int animationStep = 0;
++    private JButton jugarButton;
++    private JPanel contentPane;  // Panel principal donde cambiaremos el color
++
++    // Definimos los símbolos que vamos a usar
++    private final String[] simbolos = {"◆", "❤", "☘"};
++
++    public traga1() {
++        random = new Random();
++
++        // Configuración de la ventana
++        setTitle("Loco Win");
++        setSize(500, 300);
++        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        setLayout(new GridLayout(5, 1));
++
++        // Crear un panel principal para poder cambiar su color
++        contentPane = new JPanel();
++        contentPane.setLayout(new GridLayout(5, 1));
++        setContentPane(contentPane);  // Usamos este panel como contenido principal
++
++        // Etiqueta para mostrar el dinero
++        dineroLabel = new JLabel("Dinero: " + dinero, SwingConstants.CENTER);
++        contentPane.add(dineroLabel);
++
++        // Panel para los resultados de los slots
++        JPanel slotPanel = new JPanel();
++        slotPanel.setLayout(new GridLayout(1, 3));
++
++        slotLabels = new JLabel[3];
++        for (int i = 0; i < 3; i++) {
++            slotLabels[i] = new JLabel("0", SwingConstants.CENTER);
++            slotLabels[i].setFont(new Font("Serif", Font.BOLD, 50));
++            slotPanel.add(slotLabels[i]);
++        }
++        contentPane.add(slotPanel);
++
++        // Botón para jugar
++        jugarButton = new JButton("Jugar (Costo 5)");
++        jugarButton.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                iniciarAnimacion();
++
++            }
++        });
++        contentPane.add(jugarButton);
++
++        // Etiqueta para mostrar el resultado
++        resultadoLabel = new JLabel("", SwingConstants.CENTER);
++        contentPane.add(resultadoLabel);
++
++        // Botón para salir
++        JButton salirButton = new JButton("Salir");
++        salirButton.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                salirButton.setText("No pares");
++            }
++        });
++        contentPane.add(salirButton);
++
++
++        JButton cacaButton = new JButton(" ");
++        cacaButton.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                cacaButton.setText("Trampa");
++                dinero = dinero + 50;
++            }
++        });
++        contentPane.add(cacaButton, SwingConstants.CENTER);
++
++
++
++
++
++        // Configuración del Timer para la animación
++        timer = new Timer(100, new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                actualizarSlots();
++            }
++        });
++    }
++
++    private void iniciarAnimacion() {
++        if (dinero >= 5) {
++            dinero -= 5;
++            dineroLabel.setText("Dinero: " + dinero);
++            animationStep = 0;
++            resultadoLabel.setText("");
++            jugarButton.setEnabled(false);  // Desactivar el botón mientras la animación ocurre
++            timer.start();  // Iniciar la animación
++        } else {
++            resultadoLabel.setText("Vende un órgano");
++        }
++    }
++
++    private void actualizarSlots() {
++        // Generar y mostrar símbolos aleatorios mientras la animación está en curso
++        for (int i = 0; i < 3; i++) {
++            slots[i] = random.nextInt(3);  // Generar un número aleatorio entre 0 y 2
++            slotLabels[i].setText(simbolos[slots[i]]);  // Mostrar el símbolo correspondiente
++        }
++
++        animationStep++;
++
++        // Detener la animación tras cierto número de pasos
++        if (animationStep >= 10) {
++            timer.stop();
++            verificarResultado();
++        }
++    }
++
++    private void verificarResultado() {
++        // Verificar si los tres símbolos son iguales
++        if (slots[0] == slots[1] && slots[1] == slots[2]) {
++            resultadoLabel.setText("¡GANASTE!");
++            dinero += 50;
++            cambiarColorVentanaTemporalmente(Color.GREEN, 1000); // Cambiar el color al ganar
++        } else {
++            resultadoLabel.setText("PERDISTE");
++            cambiarColorVentanaTemporalmente(Color.RED, 500);
++        }
++        dineroLabel.setText("Dinero: " + dinero);
++        jugarButton.setEnabled(true);  // Reactivar el botón después de la animación
++
++    }
++
++    // Método para cambiar el color de la ventana temporalmente
++    private void cambiarColorVentanaTemporalmente(Color color, int duracion) {
++        // Cambiar el color del panel principal
++        contentPane.setBackground(color);
++
++        // Crear un Timer para restaurar el color original después de la duración especificada
++        Timer colorTimer = new Timer(duracion, new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                // Restaurar el color original
++                contentPane.setBackground(null);  // Restablecer el color predeterminado
++            }
++        });
++
++        // Solo ejecuta el Timer una vez (tras la duración)
++        colorTimer.setRepeats(false);
++        colorTimer.start();
++    }
++
++    public static void main(String[] args) {
++        // Ejecutar la GUI en el hilo de la interfaz gráfica
++        SwingUtilities.invokeLater(new Runnable() {
++            @Override
++            public void run() {
++                traga1 frame = new traga1();
++                frame.setVisible(true);
++            }
++        });
++    }
++}
+Index: src/main/java/com/mycompany/java1/Torneo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/Torneo.java b/src/main/java/com/mycompany/java1/Torneo.java
+new file mode 100644
+--- /dev/null	(date 1730361457291)
++++ b/src/main/java/com/mycompany/java1/Torneo.java	(date 1730361457291)
+@@ -0,0 +1,121 @@
++package com.mycompany.java1;
++import java.util.ArrayList;
++import java.util.Random;
++import java.util.Scanner;
++
++public class Torneo {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++
++        // Selección del número de jugadores
++        System.out.println("Ingrese el número de jugadores (2, 3 o 4): ");
++        int numJugadores = scanner.nextInt();
++        scanner.nextLine(); // Limpiar el buffer del scanner
++
++        ArrayList<String> jugadores = new ArrayList<>();
++        ArrayList<Double> vidas = new ArrayList<>();
++
++        // Registro de jugadores y asignación de vida
++        for (int i = 1; i <= numJugadores; i++) {
++            System.out.println("Jugador " + i + ": ");
++            String jugador = scanner.nextLine();
++            jugadores.add(jugador);
++            double vida = random.nextInt(50, 100);
++            vidas.add(vida);
++        }
++
++        // Inicio de las batallas hasta que quede solo un jugador
++        while (jugadores.size() > 1) {
++            int indice1 = random.nextInt(jugadores.size());
++            int indice2;
++
++            do {
++                indice2 = random.nextInt(jugadores.size());
++            } while (indice1 == indice2);  // Asegurarse de que no se elija el mismo jugador
++
++            String jugador1 = jugadores.get(indice1);
++            String jugador2 = jugadores.get(indice2);
++            double vida1 = vidas.get(indice1);
++            double vida2 = vidas.get(indice2);
++
++            System.out.println("\n" + jugador1 + " lucha contra " + jugador2);
++            double vidaGanador = batalla(jugador1, vida1, jugador2, vida2, scanner, random);
++
++            // Determinar el ganador y actualizar la lista
++            if (vida1 > 0) {
++                System.out.println(jugador1 + " ha ganado contra " + jugador2);
++                jugadores.remove(indice2);
++                vidas.remove(indice2);
++                vidas.set(indice1, vidaGanador);  // El ganador mantiene su vida
++            } else {
++                System.out.println(jugador2 + " ha ganado contra " + jugador1);
++                jugadores.remove(indice1);
++                vidas.remove(indice1);
++                vidas.set(indice2, vidaGanador);  // El ganador mantiene su vida
++            }
++        }
++
++        System.out.println("\n¡El ganador final es " + jugadores.get(0) + " con una vida de " + vidas.get(0) + "!");
++    }
++
++    // Función que maneja una batalla entre dos jugadores
++    public static double batalla(String us1, double vida1, String us2, double vida2, Scanner scanner, Random random) {
++        double daño1, daño2;
++        int critico, esquive;
++        int turno = 0;
++        String pausa;
++
++        System.out.println("Presiona (enter) para continuar con el siguiente turno");
++
++        while (vida1 > 0 && vida2 > 0) {
++            // Ataque de us1 a us2
++            turno++;
++            pausa = scanner.nextLine();
++            daño1 = random.nextInt(5, 25);
++            critico = random.nextInt(10);
++            esquive = random.nextInt(20);
++            System.out.println("Turno " + turno + ": " + us1 + " ataca a " + us2);
++
++            if (critico == 0) {
++                daño1 *= 1.5;
++                System.out.println("¡CRÍTICO!");
++            } else if (esquive == 0) {
++                daño1 = 0;
++                System.out.println("¡ESQUIVE!");
++            }
++
++            vida2 -= daño1;
++            System.out.println(us2 + " recibe " + daño1 + " de daño, la vida de " + us2 + " es " + vida2);
++
++            if (vida2 <= 0) {
++                break;
++            }
++
++            // Ataque de us2 a us1
++            turno++;
++            pausa = scanner.nextLine();
++            daño2 = random.nextInt(5, 25);
++            critico = random.nextInt(10);
++            esquive = random.nextInt(20);
++            System.out.println("Turno " + turno + ": " + us2 + " ataca a " + us1);
++
++            if (critico == 0) {
++                daño2 *= 1.5;
++                System.out.println("¡CRÍTICO!");
++            } else if (esquive == 0) {
++                daño2 = 0;
++                System.out.println("¡ESQUIVE!");
++            }
++
++            vida1 -= daño2;
++            System.out.println(us1 + " recibe " + daño2 + " de daño, la vida de " + us1 +" es " + vida1);
++
++            if (vida1 <= 0) {
++                break;
++            }
++        }
++
++        return vida1 > 0 ? vida1 : vida2;  // Devuelve la vida del ganador
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A13SetiMig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A13SetiMig.java b/src/main/java/com/mycompany/java1/UF1A13SetiMig.java
+new file mode 100644
+--- /dev/null	(date 1730361457543)
++++ b/src/main/java/com/mycompany/java1/UF1A13SetiMig.java	(date 1730361457543)
+@@ -0,0 +1,75 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++import java.util.Random;
++
++public class UF1A13SetiMig {
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++
++        System.out.println("Introduce tu ingreso: ");
++        int dinero = scanner.nextInt();
++        int apuesta = 1;
++        while (apuesta != 0) {
++            System.out.println("Saldo: " + dinero + "\nIntroduce tu apuesta:\n0 significa que no quieres jugar más");
++            apuesta = scanner.nextInt();
++            scanner.nextLine();
++            if (apuesta != 0) {
++                if (apuesta > dinero) {
++                    System.out.println("No tienes suficiente saldo: " + dinero);
++                } else {
++                    dinero = dinero - apuesta;
++                    System.out.println("Saldo: " + dinero + "\nApuesta: " + apuesta);
++                    double pcvalor = 0;
++                    double cartapc1 = 0;
++                    for (int i = 2; i != 0; i--) {
++                        cartapc1 = random.nextInt(1, 10);
++                        if (cartapc1 == 8 || cartapc1 == 9 || cartapc1 == 10) {
++                            pcvalor = pcvalor + 0.5;
++                            cartapc1 = 0.5;
++                        } else {
++                            pcvalor = pcvalor + cartapc1;
++                        }
++                    }
++                    System.out.println("El ordinador té un: " + cartapc1+" y otra carta oculta");
++                    double cartaus = 0;
++                    double usvalor = 0;
++                    String otra;
++                    boolean plantar = true;
++                    while (plantar) {
++                        cartaus = random.nextInt(1, 10);
++                        if (cartaus == 8 || cartaus == 9 || cartaus == 10) {
++                            usvalor = pcvalor + 0.5;
++
++                        } else {
++                            usvalor = usvalor + cartaus;
++                        }
++                        System.out.println("Tu valor és de " + usvalor + "\nDeseas otra carta? (y/n)");
++                        otra = scanner.nextLine();
++                        if (otra.equals("n")) {
++                            System.out.println("El jugador se planta!");
++                            plantar = false;
++                        }
++                    }
++                    if ((usvalor <= 7.5 && usvalor > pcvalor) || (pcvalor > 7.5 && usvalor <= 7.5)) {
++                        apuesta = apuesta * 2;
++                        dinero = dinero + apuesta;
++                        System.out.println("HAS GANADO\nEl PC tenia: " + pcvalor + "\n");
++                    } else if (usvalor > 7.5) {
++                        System.out.println("Te has pasado");
++                        System.out.println("HAS PERDIDO\nEl pc tenia: " + pcvalor + "\n");
++
++                    } else {
++                        System.out.println("HAS PERDIDO\nEl pc tenia: " + pcvalor + "\n");
++
++                    }
++
++                }
++            }
++            else{
++
++            }
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A13Avaluable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A13Avaluable.java b/src/main/java/com/mycompany/java1/UF1A13Avaluable.java
+new file mode 100644
+--- /dev/null	(date 1730361457462)
++++ b/src/main/java/com/mycompany/java1/UF1A13Avaluable.java	(date 1730361457462)
+@@ -0,0 +1,74 @@
++package com.mycompany.java1;
++import java.util.Random;
++import java.util.Scanner;
++
++public class UF1A13Avaluable {
++    public static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++        Random random = new Random();
++
++        int pos1 = 1;
++        int pos2 = 1;
++        int av1;
++        int av2;
++        int turno = 1;
++        System.out.println("coche1 posición 1\ncoche2 posición 1\nPulsa ENTER para continuar");
++        while (pos1 < 10 && pos2 <10 && turno < 11 ){
++            String cont = scanner.nextLine();
++            System.out.println("Turno "+turno);
++            av1 = random.nextInt(1,3);
++            av2 = random.nextInt(1,3);
++            pos1 = pos1 + av1;
++            pos2 = pos2 + av2;
++            System.out.println("coche1 avanza: "+av1+"\ncoche2 avanza: "+av2);
++            if (pos1%2==0){
++                System.out.println("coche1. Curva Cerrada. Retrocede: "+pos1/2);
++                pos1 = pos1 - (pos1/2);
++            }
++            else{
++                System.out.println("coche1. Acelera en recta: "+(pos1+1)/2);
++                pos1 = pos1 + ((pos1+1)/2);
++            }
++            if (pos2%2==0){
++                System.out.println("coche2. Curva Cerrada. Retrocede: "+pos2/2);
++                pos2 = pos2 - (pos2/2);
++            }
++            else{
++                System.out.println("coche2. Acelera en recta: "+(pos2+1)/2);
++                pos2 = pos2 + ((pos2+1)/2);
++            }
++            if (pos1 == 3 || pos1 == 7){
++                System.out.println("coche1. Obstaculo. Retrocede: 2");
++                pos1 = pos1 -2;
++            }
++            if (pos2 == 3 || pos2 == 7){
++                System.out.println("coche2. Obstaculo. Retrocede: 2");
++                pos2 = pos2 -2;
++            }
++            if (pos1 <0){
++                pos1 = 0;
++            }
++            if (pos2 <0){
++                pos2=0;
++            }
++            System.out.print("Coche 1 (Posición actual: "+pos1+"): ");
++            for (int i = pos1;i>0;i--){
++                System.out.print("=");}
++            System.out.println("");
++            System.out.print("Coche 2 (Posición actual: "+pos2+"): ");
++            for (int i = pos2;i>0;i--){
++                System.out.print("=");}
++            System.out.println("");
++            turno = turno + 1;
++        }
++        if (pos1>10 && pos2<10){
++            System.out.println("COCHE 1 GANA!");
++        }
++        else if (pos2>10 && pos1<10) {
++            System.out.println("COCHE 2 GANA!");
++        }
++        else {
++            System.out.println("EMPATE");
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A101.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A101.java b/src/main/java/com/mycompany/java1/UF1A101.java
+new file mode 100644
+--- /dev/null	(date 1730361457697)
++++ b/src/main/java/com/mycompany/java1/UF1A101.java	(date 1730361457697)
+@@ -0,0 +1,22 @@
++package com.mycompany.java1;
++import  java.util.Scanner;
++
++
++public class UF1A101 {
++    public static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Introduce el primer numero: ");
++        int num1 = scanner.nextInt();
++        System.out.println("Introduce el segundo numero: ");
++        int num2 = scanner.nextInt();
++
++        int resultado = 0;
++
++        for (int cont = num1 ;cont != 0; cont--){
++            resultado = resultado + num2;
++        }
++        System.out.println(num1+" * "+num2+" = "+resultado);
++
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A15Triangulo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A15Triangulo.java b/src/main/java/com/mycompany/java1/UF1A15Triangulo.java
+new file mode 100644
+--- /dev/null	(date 1730361457621)
++++ b/src/main/java/com/mycompany/java1/UF1A15Triangulo.java	(date 1730361457621)
+@@ -0,0 +1,56 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A15Triangulo {
++    static public void main(String[] args){
++        System.out.println("Elige tu estructura: \n1. 9x8\n2. Escalera numeros\n3. Escalera *\n4. 9x9 con E\n5. Escalera invertida *");
++        Scanner scanner = new Scanner(System.in);
++        int estructura = scanner.nextInt();
++        switch (estructura){
++            case (1):
++                for (int i=1;i<9;i++){
++                    for (int j=1;j<10;j++){
++                        System.out.print(j+" ");
++                    }
++                    System.out.println("");
++                }
++                break;
++            case (2):
++                for (int i = 1, n = 9; i<=n;i++){
++                    for (int j = 1; j<=i;j++){
++                        System.out.print(j+" ");
++                    }
++                    System.out.println("");
++                }
++                break;
++            case (3):
++                for (int i = 1, n = 9; i<=n;i++){
++                    for (int j = 1; j<=i;j++){
++                        System.out.print("* ");
++                    }
++                    System.out.println("");
++                }
++                break;
++            case (4):
++                for (int i = 0,n=9; i < n; i++) {
++                    for (int j = 0; j < n; j++) {
++                        if (i == j) {
++                            System.out.print("E ");
++                        } else {
++                            System.out.print("* ");
++                        }
++                    }
++                    System.out.println("");
++                }
++                break;
++            case (5):
++                for (int i =9,n=i;i>=1;i--){
++                    for (int j = 1; j<=i;j++){
++                        System.out.print("* ");
++                    }
++                    System.out.println("");
++                }
++        }
++
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A111.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A111.java b/src/main/java/com/mycompany/java1/UF1A111.java
+new file mode 100644
+--- /dev/null	(date 1730361457851)
++++ b/src/main/java/com/mycompany/java1/UF1A111.java	(date 1730361457851)
+@@ -0,0 +1,21 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A111 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int resultado = 0;
++        while (resultado < 21) {
++            System.out.println("\nIntroduce un número entre 1 y 5:");
++            int num = scanner.nextInt();
++            while (num < 1 || num > 5) {
++                System.out.println("\nDebe ser un número entre 1 y 5:");
++                num = scanner.nextInt();
++            }
++            System.out.print(resultado + " + " + num + " = ");
++            resultado += num;
++            System.out.println(resultado);
++        }
++        System.out.print(resultado + " se pasa de 21.");
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A102.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A102.java b/src/main/java/com/mycompany/java1/UF1A102.java
+new file mode 100644
+--- /dev/null	(date 1730361457772)
++++ b/src/main/java/com/mycompany/java1/UF1A102.java	(date 1730361457772)
+@@ -0,0 +1,15 @@
++package com.mycompany.java1;
++
++public class UF1A102 {
++    public  static void main(String[] args){
++        for(int contador = 0;contador!=100;) {
++            System.out.print(" \n---------------------------------------------------------------\n");
++            for (int linea = 0; linea != 8 && contador!=100; linea++) {
++                contador = contador + 1;
++                System.out.print("\t|" + contador+"\t|");
++
++                }
++            }
++        }
++    }
++
+Index: src/main/java/com/mycompany/java1/UF1A114.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A114.java b/src/main/java/com/mycompany/java1/UF1A114.java
+new file mode 100644
+--- /dev/null	(date 1730361457996)
++++ b/src/main/java/com/mycompany/java1/UF1A114.java	(date 1730361457996)
+@@ -0,0 +1,34 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A114 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int cont = 1;
++        int num1 = 0;
++        int num2 = 1;
++        int num3 = 2;
++        while (cont != 0) {
++            System.out.println("Introduce un numero entero: ");
++            num1 = scanner.nextInt();
++            if (num1 == num2 && num2 == num3) {
++                System.out.println("El numero " + num1 + " se repite 3 veces consecutivas");
++                cont = 0;
++            } else {
++                System.out.println("Introduce un numero entero: ");
++                num2 = scanner.nextInt();
++                if (num1 == num2 && num2 == num3) {
++                    System.out.println("El numero " + num1 + " se repite 3 veces consecutivas");
++                    cont = 0;
++                } else {
++                    System.out.println("Introduce un numero entero: ");
++                    num3 = scanner.nextInt();
++                    if (num1 == num2 && num2 == num3) {
++                        System.out.println("El numero " + num1 + " se repite 3 veces consecutivas");
++                        cont = 0;
++                    }
++                }
++            }
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/com/mycompany/java1/UF1A112.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A112.java b/src/main/java/com/mycompany/java1/UF1A112.java
+new file mode 100644
+--- /dev/null	(date 1730361457919)
++++ b/src/main/java/com/mycompany/java1/UF1A112.java	(date 1730361457919)
+@@ -0,0 +1,33 @@
++package com.mycompany.java1;
++import  java.util.Scanner;
++
++public class UF1A112 {
++    public  static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Introduce el numero para la tabla:");
++        int tabla = scanner.nextInt();
++        for (int i = 1;i != 11;i++){
++            int errores = 1;
++            int respuesta1 = tabla * i;
++            System.out.print(tabla+" * "+i+" = ");
++            int respuesta = scanner.nextInt();
++            if (respuesta != respuesta1){
++                System.out.println("incorrecto");
++                while (errores > 0){
++                    System.out.print(tabla+" * "+i+" = ");
++                    respuesta = scanner.nextInt();
++                    if (respuesta != respuesta1){
++                        System.out.println("incorrecto");
++                        errores=errores-1;
++                    }
++                    else{
++                        System.out.println("correcto");
++                        errores=errores-2;
++                    }
++                }
++            }
++            else{System.out.println("correcto");}
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A116.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A116.java b/src/main/java/com/mycompany/java1/UF1A116.java
+new file mode 100644
+--- /dev/null	(date 1730361458154)
++++ b/src/main/java/com/mycompany/java1/UF1A116.java	(date 1730361458154)
+@@ -0,0 +1,11 @@
++package com.mycompany.java1;
++
++public class UF1A116 {
++    public static void main(String[] args){
++
++        for (double fahr = 0;fahr != 301;fahr++){
++            double cel = (5*(fahr-32))/9;
++            System.out.print(fahr+" Fº | "+cel+" Cº\n");
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A115.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A115.java b/src/main/java/com/mycompany/java1/UF1A115.java
+new file mode 100644
+--- /dev/null	(date 1730361458071)
++++ b/src/main/java/com/mycompany/java1/UF1A115.java	(date 1730361458071)
+@@ -0,0 +1,22 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A115 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Introduce un numero positivo entero: ");
++        int numero = scanner.nextInt();
++        if (numero < 0) {
++            System.out.println("El numero ha de ser positivo.");
++        } else {
++            int cifras = 0;
++            while (numero > 0) {
++                numero /= 10;
++                cifras=cifras+1;
++            }
++            System.out.println("Tiene " + cifras + " cifras");
++        }
++
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A121.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A121.java b/src/main/java/com/mycompany/java1/UF1A121.java
+new file mode 100644
+--- /dev/null	(date 1730361458304)
++++ b/src/main/java/com/mycompany/java1/UF1A121.java	(date 1730361458304)
+@@ -0,0 +1,24 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A121 {
++    public static void main(String[] args){
++        Random random = new Random();
++
++        int cara = 0;
++        int cruz = 0;
++
++        for (int i = 100; i > 0;i--){
++            int moneda = random.nextInt(2);
++            if (moneda == 0){
++                System.out.println("CARA!");
++                cara = cara + 1;
++            }
++            else{
++                System.out.println("CRUZ!");
++                cruz ++;
++            }
++        }
++        System.out.println("Cara ha salido "+cara+" veces\nCruz ha salido "+cruz+" veces");
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A117.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A117.java b/src/main/java/com/mycompany/java1/UF1A117.java
+new file mode 100644
+--- /dev/null	(date 1730361458231)
++++ b/src/main/java/com/mycompany/java1/UF1A117.java	(date 1730361458231)
+@@ -0,0 +1,23 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A117 {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        int num1 = 1;
++        int num2;
++        System.out.println("Introduce cuantos numeros deseas:");
++        int i = scanner.nextInt();
++        System.out.print("Secuencia: ");
++        for (; i >= 1; i--) {
++            System.out.print(num1 + ", ");
++            num1 = num1 + 2;
++            if (i > 1) {
++                num2 = num1 + 2;
++                System.out.print(num2 + ", ");
++                i = i -1;
++            }
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/java/com/mycompany/java1/UF1A171.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A171.java b/src/main/java/com/mycompany/java1/UF1A171.java
+new file mode 100644
+--- /dev/null	(date 1730361458492)
++++ b/src/main/java/com/mycompany/java1/UF1A171.java	(date 1730361458492)
+@@ -0,0 +1,40 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A171 {
++    public static void main(String[] args){
++        Scanner scanner = new Scanner(System.in);
++
++        int suma = 0;
++        int [] num = {0,1,2,3,4};
++
++        int max = Integer.MIN_VALUE;
++        int min = Integer.MAX_VALUE;
++        int mid=0;
++
++        for (int i = 0;i < 5;i++){
++            System.out.println("Introduce un numero:");
++            num[i] = scanner.nextInt();
++            suma = suma + num[i];
++
++        }
++        for (int i=0;i<5;i++){
++            if (i == 0){
++                System.out.print("|");
++            }
++            else if (i == 2) {
++                mid = num[i];
++            }
++            System.out.print("\t"+num[i]+"\t|");
++            if (num[i]<=min){
++                min = num[i];
++
++            } else if (num[i]>=max) {
++                max = num[i];
++            }
++        }
++        System.out.println("");
++        System.out.println("El resultado de todos és: "+suma+"\nEl num más grande és: "+max+"\nEl num más pequeño és: "+min+"\nEl valor de la posición del medio és: "+mid);
++
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A122.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A122.java b/src/main/java/com/mycompany/java1/UF1A122.java
+new file mode 100644
+--- /dev/null	(date 1730361458395)
++++ b/src/main/java/com/mycompany/java1/UF1A122.java	(date 1730361458395)
+@@ -0,0 +1,44 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A122 {
++    public static void main(String[] args) {
++        Random random = new Random();
++        int num1 = 0;
++        int num2 = 0;
++        int num3 = 0;
++        int num4 = 0;
++        int num5 = 0;
++        int num6 = 0;
++        for (int i = 100; i > 0; i--) {
++            int dado = random.nextInt(6);
++            switch (dado) {
++                case (0):
++                    System.out.println("Numero 1");
++                    num1++;
++                    break;
++                case (1):
++                    System.out.println("Numero 2");
++                    num2++;
++                    break;
++                case (2):
++                    System.out.println("Numero 3");
++                    num3++;
++                    break;
++                case (3):
++                    System.out.println("Numero 4");
++                    num4++;
++                    break;
++                case (4):
++                    System.out.println("Numero 5");
++                    num5++;
++                    break;
++                case (5):
++                    System.out.println("Numero 6");
++                    num6++;
++                    break;
++            }
++        }
++        System.out.println("Num 1: "+num1+"\nNum 2: "+num2+"\nNum 3: "+num3+"\nNum 4: "+num4+"\nNum 5: "+num5+"\nNum 6: "+num6);
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A173.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A173.java b/src/main/java/com/mycompany/java1/UF1A173.java
+new file mode 100644
+--- /dev/null	(date 1730361458647)
++++ b/src/main/java/com/mycompany/java1/UF1A173.java	(date 1730361458647)
+@@ -0,0 +1,23 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A173 {
++    public static void main(String[] args){
++        Random random = new Random();
++
++        int [] lista = new int [12];
++        int [] lista2 = new int [12];
++
++        System.out.println("Tabla 1:");
++        for (int i = 0; i<12;i++){
++            lista[i] = random.nextInt(1,100);
++            lista2[i] = lista[i] * 2;
++            System.out.print("|\t"+lista[i]+"\t");
++        }
++        System.out.println("\nTabla 2:");
++        for (int i = 0; i<12;i++){
++            System.out.print("|\t"+lista2[i]+"\t");
++        }
++    }
++}
++
+Index: src/main/java/com/mycompany/java1/UF1A172.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A172.java b/src/main/java/com/mycompany/java1/UF1A172.java
+new file mode 100644
+--- /dev/null	(date 1730361458568)
++++ b/src/main/java/com/mycompany/java1/UF1A172.java	(date 1730361458568)
+@@ -0,0 +1,33 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A172 {
++    public static void main(String[] args){
++    Random random = new Random();
++
++    int [] temp = new int[12];
++    int minpos = 0;
++    double midtemp = 0;
++    int tempsup = 0;
++    int min = Integer.MAX_VALUE;
++
++        System.out.print("Temperatures:");
++    for (int i = 0;i<12;i++){
++        temp[i] = random.nextInt(30);
++        midtemp = midtemp + temp[i];
++        System.out.print("\t"+temp[i]);
++    }
++        System.out.println();
++    midtemp = midtemp /12;
++    for (int i = 0;i<12;i++){
++        if (temp[i]>=midtemp){
++            tempsup++;
++        } else if (temp[i]<min) {
++            min = temp[i];
++            minpos = (i+1);
++        }
++
++    }
++        System.out.println("Temperatura mitjana: "+midtemp+"\nTemperatures superior o igual a la mitjana: "+tempsup+"\nTemperatura minima: "+min+"\nPosición temperatura minima: "+minpos);
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A175.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A175.java b/src/main/java/com/mycompany/java1/UF1A175.java
+new file mode 100644
+--- /dev/null	(date 1730361458798)
++++ b/src/main/java/com/mycompany/java1/UF1A175.java	(date 1730361458798)
+@@ -0,0 +1,29 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A175 {
++    public static void main(String[] args){
++        Random random = new Random();
++
++        int [] dado = new int[6];
++        int num= 0;
++
++        for (int i = 0; i < 100; i++){
++            num = random.nextInt(6);
++            for (int j = 0; j<7;j++){
++                if (num == j){
++                    dado[j] = dado[j]+1;
++                }
++            }
++        }
++        for (int j = 0; j<6;j++) {
++            System.out.println("Num "+(j+1)+": ");
++                for (int i = dado[j];i!=0;i--){
++                    System.out.print("■");
++                }
++                System.out.print("\t"+dado[j]);
++
++            System.out.println("");
++        }
++        }
++}
+Index: src/main/java/com/mycompany/java1/UF1A174.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A174.java b/src/main/java/com/mycompany/java1/UF1A174.java
+new file mode 100644
+--- /dev/null	(date 1730361458724)
++++ b/src/main/java/com/mycompany/java1/UF1A174.java	(date 1730361458724)
+@@ -0,0 +1,31 @@
++package com.mycompany.java1;
++import java.util.Random;
++
++public class UF1A174 {
++    public static void main(String[] args){
++        Random random = new Random();
++
++        int [] lista = new int [15];
++        int [] lista2 = new int [15];
++        int j = 0;
++
++        System.out.println("Tabla");
++        for (int i = 0; i<15;i++){
++            lista[i] = random.nextInt(50,100);
++            if (lista[i]%2==0){
++                lista2[j] = lista[i];
++                j++;
++            }
++            System.out.print("|\t"+lista[i]+"\t");
++        }
++        System.out.println("\nTabla de numeros solo pares");
++        for (int i = 0; i<15;i++){
++            if (lista2[i]==0){
++                i = 15;
++            }
++            else {
++                System.out.print("|\t" + lista2[i]+"\t");
++            }
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A920.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A920.java b/src/main/java/com/mycompany/java1/UF1A920.java
+new file mode 100644
+--- /dev/null	(date 1730361458979)
++++ b/src/main/java/com/mycompany/java1/UF1A920.java	(date 1730361458979)
+@@ -0,0 +1,15 @@
++package com.mycompany.java1;
++import java.util.Scanner;
++
++public class UF1A920 {
++    public static  void main (String[] args){
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("Introduce el numero entero: ");
++        int num = scanner.nextInt();
++
++        for (int i = 0; i < 10; i++){
++            System.out.println(num+" * "+(i+1)+" = "+(num*(i+1)));
++        }
++    }
++}
+Index: src/main/java/com/mycompany/java1/UF1A910.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/mycompany/java1/UF1A910.java b/src/main/java/com/mycompany/java1/UF1A910.java
+new file mode 100644
+--- /dev/null	(date 1730361458890)
++++ b/src/main/java/com/mycompany/java1/UF1A910.java	(date 1730361458890)
+@@ -0,0 +1,9 @@
++package com.mycompany.java1;
++
++public class UF1A910 {
++    public static  void main (String[] args){
++        for (int i = 0; i < 10; i++){
++            System.out.println("6 * "+(i+1)+" = "+(6*(i+1)));
++        }
++    }
++}
