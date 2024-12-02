@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/metodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/BuscarArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/BuscarArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +104,7 @@
     "Application.UF2A11.executor": "Run",
     "Application.UF2A12.executor": "Run",
     "Application.UF2A13.executor": "Run",
+    "Application.UF2A2.executor": "Run",
     "Application.a (1).executor": "Run",
     "Application.a (2).executor": "Run",
     "Application.a (3).executor": "Run",
@@ -137,7 +134,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF2A13">
+  <component name="RunManager" selected="Application.UF2A2">
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,8 +221,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.tes" />
+    <configuration name="UF2A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A2" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -245,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UF2A2" />
         <item itemvalue="Application.UF2A13" />
         <item itemvalue="Application.UF2A12" />
         <item itemvalue="Application.UF2A11" />
         <item itemvalue="Application.UF1A205" />
-        <item itemvalue="Application.tes" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732303162621</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="a">
+      <option name="closed" value="true" />
+      <created>1732905544867</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1732905544867</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
