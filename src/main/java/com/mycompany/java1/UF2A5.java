@@ -79,18 +79,16 @@ public class UF2A5 {
     }
 
 
-    // Funció per llistar l'array
     public void llistarLlibres(Llibre[] biblioteca, int numLlibres) {
-        System.out.println("\n--- LLIBRES A LA BIBLIOTECA ---");
+        System.out.println("\n\tLLIBRES A LA BIBLIOTECA");
         for (int i = 0; i < numLlibres; i++) {
             System.out.println(biblioteca[i]);
         }
     }
 
-    // Funció per buscar llibres d'un autor
     public void buscarPerAutor(Llibre[] biblioteca, int numLlibres, String autor) {
         boolean trobat = false;
-        System.out.println("\n--- LLIBRES DE L'AUTOR: " + autor + " ---");
+        System.out.println("\n\tLLIBRES DE L'AUTOR: " + autor);
         for (int i = 0; i < numLlibres; i++) {
             if (biblioteca[i].getAutor().equalsIgnoreCase(autor)) {
                 System.out.println(biblioteca[i]);
@@ -102,12 +100,11 @@ public class UF2A5 {
         }
     }
 
-    // Funció per buscar un llibre per ISBN (búsqueda lineal)
     public void buscarPerIsbn(Llibre[] biblioteca, int numLlibres, String isbn) {
         boolean trobat = false;
         for (int i = 0; i < numLlibres; i++) {
             if (biblioteca[i].getIsbn().equals(isbn)) {
-                System.out.println("\n--- LLIBRE TROBAT ---");
+                System.out.println("\n\tLLIBRE TROBAT");
                 System.out.println(biblioteca[i]);
                 trobat = true;
                 break;
