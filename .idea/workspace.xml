@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Llibre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A41.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/mevoy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,11 +108,13 @@
     "Application.UF2A2.executor": "Run",
     "Application.UF2A3.executor": "Run",
     "Application.UF2A5.executor": "Run",
+    "Application.UF2A6.executor": "Run",
     "Application.a (1).executor": "Run",
     "Application.a (2).executor": "Run",
     "Application.a (3).executor": "Run",
     "Application.a.executor": "Run",
     "Application.arraya2d.executor": "Run",
+    "Application.mevoy.executor": "Run",
     "Application.p.executor": "Run",
     "Application.sonido.executor": "Run",
     "Application.tes.executor": "Run",
@@ -139,7 +139,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF2A5">
+  <component name="RunManager" selected="Application.UF2A6">
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,32 +173,6 @@
       <option name="docutils_task" value="" />
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
-    </configuration>
-    <configuration name="UF2A12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A12" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF2A13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A13" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="UF2A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A2" />
@@ -239,6 +213,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UF2A6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A6" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mevoy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.mevoy" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2">
@@ -247,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UF2A6" />
+        <item itemvalue="Application.mevoy" />
         <item itemvalue="Application.UF2A5" />
         <item itemvalue="Application.UF2A3" />
         <item itemvalue="Application.UF2A2" />
-        <item itemvalue="Application.UF2A13" />
-        <item itemvalue="Application.UF2A12" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736352416282</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="a">
+      <option name="closed" value="true" />
+      <created>1736352614425</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1736352614425</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
