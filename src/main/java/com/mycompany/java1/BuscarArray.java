@@ -16,6 +16,8 @@ public class BuscarArray {
             System.out.println("Algú ha tret un 10.");
         } else {
             System.out.println("Ningú ha tret un 10");
+            System.out.println();
         }
+
     }
 }
