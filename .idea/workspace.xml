@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/HospitalPacients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,7 @@
     "Application.Batalla1.executor": "Run",
     "Application.BlackJack.executor": "Run",
     "Application.BuscarArray.executor": "Run",
+    "Application.HospitalPacients.executor": "Run",
     "Application.JocCartes.executor": "Run",
     "Application.Ordenacio.executor": "Run",
     "Application.PreguntasMat.executor": "Run",
@@ -141,7 +140,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF2A7">
+  <component name="RunManager" selected="Application.HospitalPacients">
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,8 +175,8 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="UF2A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A3" />
+    <configuration name="HospitalPacients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.HospitalPacients" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -249,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HospitalPacients" />
         <item itemvalue="Application.UF2A7" />
         <item itemvalue="Application.UF2A6" />
         <item itemvalue="Application.mevoy" />
         <item itemvalue="Application.UF2A5" />
-        <item itemvalue="Application.UF2A3" />
       </list>
     </recent_temporary>
   </component>
@@ -546,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736453456159</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="a">
+      <option name="closed" value="true" />
+      <created>1736799346117</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1736799346117</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
