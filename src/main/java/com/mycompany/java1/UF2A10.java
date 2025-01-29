@@ -57,7 +57,6 @@ public class UF2A10 {
     }
 
     public void dadesColla(String nom, Colla[] arrayColla, Castell[] arrayCastell) {
-        // Buscar la colla pel nom
         for (Colla colla : arrayColla) {
             if (colla.getNom().equalsIgnoreCase(nom)) {
                 System.out.println("Colla: " + colla.getNom());
@@ -72,7 +71,6 @@ public class UF2A10 {
                 return;
             }
         }
-        // Si no s'ha trobat la colla
         System.out.println("No s'ha trobat cap colla amb el nom: " + nom);
     }
 
