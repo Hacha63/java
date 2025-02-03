@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF3A1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/Peli.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2Ac11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF2A10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +32,12 @@
     &quot;assignee&quot;: &quot;Hacha63&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Hacha63/java.git&quot;,
-    &quot;accountId&quot;: &quot;344b72dc-5237-47cc-b8ca-2222aab36510&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Hacha63/java.git",
+    "accountId": "0aaae068-d9f3-4a2d-91b1-3ea83084f386"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -52,7 +55,6 @@
     &quot;Application.Batalla1.executor&quot;: &quot;Run&quot;,
     &quot;Application.BlackJack.executor&quot;: &quot;Run&quot;,
     &quot;Application.BuscarArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HospitalPacients.executor&quot;: &quot;Run&quot;,
     &quot;Application.JocCartes.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ordenacio.executor&quot;: &quot;Run&quot;,
     &quot;Application.PreguntasMat.executor&quot;: &quot;Run&quot;,
@@ -102,6 +104,7 @@
     &quot;Application.UF1A940.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF1A96.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF1Robot.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UF2A10.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF2A11.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF2A12.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF2A13.executor&quot;: &quot;Run&quot;,
@@ -109,8 +112,6 @@
     &quot;Application.UF2A3.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF2A5.executor&quot;: &quot;Run&quot;,
     &quot;Application.UF2A6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF2A7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UF3A1.executor&quot;: &quot;Run&quot;,
     &quot;Application.a (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.a (2).executor&quot;: &quot;Run&quot;,
     &quot;Application.a (3).executor&quot;: &quot;Run&quot;,
@@ -141,7 +142,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UF3A1">
+  <component name="RunManager" selected="Application.UF2A10">
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,8 +177,34 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="HospitalPacients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.HospitalPacients" />
+    <configuration name="UF2A10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A10" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF2A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A3" />
+      <module name="java1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF2A5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A5" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -191,32 +218,6 @@
     </configuration>
     <configuration name="UF2A6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A6" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF2A7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF2A7" />
-      <module name="java1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UF3A1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.UF3A1" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -249,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UF3A1" />
-        <item itemvalue="Application.HospitalPacients" />
-        <item itemvalue="Application.UF2A7" />
+        <item itemvalue="Application.UF2A10" />
         <item itemvalue="Application.UF2A6" />
         <item itemvalue="Application.mevoy" />
+        <item itemvalue="Application.UF2A5" />
+        <item itemvalue="Application.UF2A3" />
       </list>
     </recent_temporary>
   </component>
@@ -540,21 +541,13 @@
     </task>
     <task id="LOCAL-00035" summary="a">
       <option name="closed" value="true" />
-      <created>1736453456159</created>
+      <created>1738105888138</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1736453456159</updated>
+      <updated>1738105888139</updated>
     </task>
-    <task id="LOCAL-00036" summary="a">
-      <option name="closed" value="true" />
-      <created>1736799346117</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1736799346117</updated>
-    </task>
-    <option name="localTasksCounter" value="37" />
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
