@@ -125,7 +125,7 @@ class Parking {
         if (codi >= 0 && codi < places.size() && places.get(codi).isOcupada()) {
             return processDesaparcar(places.get(codi));
         }
-        return -1; // Plaza inválida o vacía
+        return 0; // Plaza inválida o vacía
     }
 
     private double processDesaparcar(Plaça plaça) {

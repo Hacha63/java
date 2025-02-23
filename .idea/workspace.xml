@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8eb1771-a749-4e5a-a1c8-25841acca51a" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/BuscarIP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/FiltrarAlumnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/GestioJocs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/RegistreAccessos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/UF1A22.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/parking6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/java1/parking6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Hacha63/java.git&quot;,
-    &quot;accountId&quot;: &quot;344b72dc-5237-47cc-b8ca-2222aab36510&quot;
+    &quot;accountId&quot;: &quot;0aaae068-d9f3-4a2d-91b1-3ea83084f386&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -52,11 +57,11 @@
     "Application.Batalla1.executor": "Run",
     "Application.BlackJack.executor": "Run",
     "Application.BuscarArray.executor": "Run",
-    "Application.Habitatge (1).executor": "Run",
-    "Application.Habitatge (2).executor": "Run",
-    "Application.Habitatge.executor": "Run",
+    "Application.BuscarIP.executor": "Run",
+    "Application.FiltrarAlumnes (1).executor": "Run",
+    "Application.FiltrarAlumnes.executor": "Run",
+    "Application.GestioJocs.executor": "Run",
     "Application.JocCartes.executor": "Run",
-    "Application.Main.executor": "Run",
     "Application.Ordenacio.executor": "Run",
     "Application.PreguntasMat.executor": "Run",
     "Application.RacingGame (1).executor": "Run",
@@ -65,7 +70,7 @@
     "Application.RacingGame (4).executor": "Run",
     "Application.RacingGame (5).executor": "Debug",
     "Application.RacingGame.executor": "Run",
-    "Application.TestNoms.executor": "Run",
+    "Application.RegistreAccessos.executor": "Run",
     "Application.Torneo.executor": "Run",
     "Application.UF1123.executor": "Run",
     "Application.UF1A101.executor": "Run",
@@ -124,7 +129,6 @@
     "Application.parking6.executor": "Run",
     "Application.sonido.executor": "Run",
     "Application.tes.executor": "Run",
-    "Application.testRectangle.executor": "Run",
     "Application.traga.executor": "Run",
     "Application.traga1 (1).executor": "Run",
     "Application.traga1 (2).executor": "Run",
@@ -146,7 +150,7 @@
       <recent name="com.mycompany.java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.parking6">
+  <component name="RunManager" selected="Application.FiltrarAlumnes (1)">
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,8 +185,8 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Habitatge (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.Habitatge" />
+    <configuration name="BuscarIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.BuscarIP" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -194,8 +198,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.Main" />
+    <configuration name="FiltrarAlumnes (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.FiltrarAlumnes" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -207,8 +211,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNoms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.TestNoms" />
+    <configuration name="FiltrarAlumnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.FiltrarAlumnes" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -220,8 +224,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="parking6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.parking6" />
+    <configuration name="GestioJocs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.GestioJocs" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -233,8 +237,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.testRectangle" />
+    <configuration name="RegistreAccessos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.java1.RegistreAccessos" />
       <module name="java1" />
       <extension name="coverage">
         <pattern>
@@ -254,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.parking6" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.testRectangle" />
-        <item itemvalue="Application.TestNoms" />
-        <item itemvalue="Application.Habitatge (2)" />
+        <item itemvalue="Application.FiltrarAlumnes (1)" />
+        <item itemvalue="Application.FiltrarAlumnes" />
+        <item itemvalue="Application.GestioJocs" />
+        <item itemvalue="Application.RegistreAccessos" />
+        <item itemvalue="Application.BuscarIP" />
       </list>
     </recent_temporary>
   </component>
@@ -551,15 +555,7 @@
       <option name="project" value="LOCAL" />
       <updated>1738105888139</updated>
     </task>
-    <task id="LOCAL-00036" summary="a">
-      <option name="closed" value="true" />
-      <created>1739980625364</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1739980625364</updated>
-    </task>
-    <option name="localTasksCounter" value="37" />
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
